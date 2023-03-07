@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "clispinner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kiliankoe/CLISpinner",
+      "state" : {
+        "revision" : "0572232b92ddfd80cbab4ced6973d1c210022968",
+        "version" : "0.4.0"
+      }
+    },
+    {
       "identity" : "openaiswift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/adamrushy/OpenAISwift.git",
@@ -14,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Rainbow",
       "state" : {
-        "revision" : "e0dada9cd44e3fa7ec3b867e49a8ddbf543e3df3",
-        "version" : "4.0.1"
+        "revision" : "626c3d4b6b55354b4af3aa309f998fae9b31a3d9",
+        "version" : "3.2.0"
       }
     },
     {
@@ -43,6 +52,24 @@
       "state" : {
         "revision" : "c6df6cf533d120716bff38f8ff9885e1ce2a4ac3",
         "version" : "0.9.0"
+      }
+    },
+    {
+      "identity" : "treeprinter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/STCData/TreePrinter.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9191b0dd49ed7e1d60e8dee472a179a5fd5d31da"
+      }
+    },
+    {
+      "identity" : "yams",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jpsim/Yams.git",
+      "state" : {
+        "revision" : "f47ba4838c30dbd59998a4e4c87ab620ff959e8a",
+        "version" : "5.0.5"
       }
     }
   ],

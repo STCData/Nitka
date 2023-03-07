@@ -11,7 +11,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/onevcat/Rainbow", .upToNextMajor(from: "4.0.0")),
+        .package(url: "https://github.com/onevcat/Rainbow", .upToNextMajor(from: "3.2.0")),
         .package(url: "https://github.com/scottrhoyt/SwiftyTextTable.git", from: "0.5.0"),
         .package(url: "https://github.com/jakeheis/SwiftCLI", from: "6.0.0"),
         .package(url: "https://github.com/kiliankoe/CLISpinner", from: "0.4.0"),
