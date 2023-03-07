@@ -7,21 +7,24 @@ let package = Package(
     products: [
         .library(
             name: "OpenAIReTreeable",
-            targets: ["OpenAIReTreeable"]),
+            targets: ["OpenAIReTreeable"]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/adamrushy/OpenAISwift.git", from: "1.2.0"),
-        .package(url: "https://github.com/STCData/SwiftDiffPatch.git", branch: "main")
+        .package(url: "https://github.com/STCData/SwiftDiffPatch.git", branch: "main"),
     ],
     targets: [
         .target(
             name: "OpenAIReTreeable",
             dependencies: [
                 "OpenAISwift",
-                "SwiftDiffPatch"
-            ]),
+                "SwiftDiffPatch",
+            ]
+        ),
         .testTarget(
             name: "OpenAIReTreeableTests",
-            dependencies: ["OpenAIReTreeable"]),
+            dependencies: ["OpenAIReTreeable"]
+        ),
     ]
 )

@@ -1,5 +1,5 @@
-import XCTest
 @testable import OpenAIReTreeable
+import XCTest
 
 final class OpenAIReTreeableTests: XCTestCase {
     func testExample() throws {
