@@ -3,7 +3,8 @@ import XCTest
 
 final class NitkaTests: XCTestCase {
     func testExample() throws {
-        Nitka()
-        XCTAssertEqual("", "Hello, World!")
+        let n = Nitka()
+        n.newChat(startMessage: "hello")
+        XCTAssertEqual("", "")
     }
 }

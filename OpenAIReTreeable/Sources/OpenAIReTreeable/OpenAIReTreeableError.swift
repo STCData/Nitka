@@ -9,4 +9,5 @@ import Foundation
 
 public enum OpenAIReTreeableError: Error {
     case noMessage
+    case decodingError
 }

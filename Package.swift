@@ -4,12 +4,20 @@ import PackageDescription
 
 let package = Package(
     name: "Nitka",
+    platforms: [
+        .macOS(.v10_15),
+        .iOS(.v13),
+        .tvOS(.v13),
+        .watchOS(.v6),
+    ],
+
     products: [
         .library(
             name: "Nitka",
             targets: ["Nitka"]
         ),
     ],
+
     dependencies: [
         .package(url: "https://github.com/onevcat/Rainbow", .upToNextMajor(from: "3.2.0")),
         .package(url: "https://github.com/scottrhoyt/SwiftyTextTable.git", from: "0.5.0"),

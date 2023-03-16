@@ -9,13 +9,17 @@ public struct OpenAIReTreeable {
         openAI = OpenAISwift(authToken: authToken)
     }
 
-    func send(messages: [ChatMessage]) async throws -> ChatMessage {
-        let result = try await openAI.sendChat(with: messages)
+    public func send(messages: [ChatMessage]) async throws -> ChatMessage {
+        do {
+            let result = try await openAI.sendChat(with: messages)
 
-        guard let message = result.choices.first?.message else {
-            throw OpenAIReTreeableError.noMessage
+            guard let message = result.choices.first?.message else {
+                throw OpenAIReTreeableError.noMessage
+            }
+            return message
+
+        } catch OpenAIError.decodingError {
+            throw OpenAIReTreeableError.decodingError
         }
-
-        return message
     }
 }
